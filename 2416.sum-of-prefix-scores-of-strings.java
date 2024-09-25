@@ -59,7 +59,7 @@ class Trie
     }
 }
 
-public class Solution
+class Solution
 {
     public static int[] sumPrefixScores(String[] words)
     {
