@@ -7,7 +7,6 @@
 // @lc code=start
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 class MyCalendar
 {
@@ -37,14 +36,7 @@ class MyCalendar
         events.add(newEvent);
 
         // Sorting the list by start time (optional if you want to maintain sorted order)
-        Collections.sort(events, new Comparator<int[]>()
-        {
-            @Override
-            public int compare(int[] a, int[] b)
-            {
-                return Integer.compare(a[0], b[0]);
-            }
-        });
+        Collections.sort(events, (int[] a, int[] b) -> Integer.compare(a[0], b[0]));
 
         return true; // Successfully booked the event
     }
