@@ -25,7 +25,6 @@ class Solution
             maxMove = Math.max(maxMove, dfs(i, 0));
         }
         
-        
         return maxMove;
     }
 
